@@ -30,7 +30,7 @@ modules:
     - name: BusinessPartnerValidation-db
     - name: BusinessPartnerValidation-xsuaa
     - name: BusinessPartnerValidation-dest
-    - name: BusinessPartnerValidation-ems
+    - name: BusinessPartnerValidation-em
     - name: BusinessPartnerValidation-cs
    provides:
     - name: srv-binding      # required by consumers of CAP services (e.g. approuter)
@@ -97,7 +97,7 @@ resources:
      service-plan: lite
    type: org.cloudfoundry.managed-service
 # Enterprise Messaging Service
- - name: BusinessPartnerValidation-ems
+ - name: BusinessPartnerValidation-em
    parameters:
      path: ./em.json 
      service: enterprise-messaging
